@@ -102,11 +102,6 @@
       <pos x="340" y="120"/>
     </visualElement>
     <visualElement>
-      <elementName>Not</elementName>
-      <elementAttributes/>
-      <pos x="100" y="100"/>
-    </visualElement>
-    <visualElement>
       <elementName>VDD</elementName>
       <elementAttributes>
         <entry>
@@ -114,7 +109,7 @@
           <string>&apos;1&apos;</string>
         </entry>
       </elementAttributes>
-      <pos x="-20" y="180"/>
+      <pos x="0" y="180"/>
     </visualElement>
     <visualElement>
       <elementName>Ground</elementName>
@@ -157,7 +152,7 @@ D as the least-significant bit.</string>
           <int>4</int>
         </entry>
       </elementAttributes>
-      <pos x="280" y="80"/>
+      <pos x="220" y="-260"/>
     </visualElement>
     <visualElement>
       <elementName>Testcase</elementName>
@@ -166,8 +161,22 @@ D as the least-significant bit.</string>
           <string>Testdata</string>
           <testData>
             <dataString>A B C D Y
-0 0 0 0 X
-0 0 0 1 1</dataString>
+0 0 0 0 X  
+0 0 0 1 1  
+0 0 1 0 0  
+0 0 1 1 1  
+0 1 0 0 0  
+0 1 0 1 1  
+0 1 1 0 0  
+0 1 1 1 1  
+1 0 0 0 1  
+1 0 0 1 0  
+1 0 1 0 1  
+1 0 1 1 0  
+1 1 0 0 1  
+1 1 0 1 X  
+1 1 1 0 X  
+1 1 1 1 X  </dataString>
           </testData>
         </entry>
       </elementAttributes>
@@ -180,12 +189,16 @@ D as the least-significant bit.</string>
       <p2 x="480" y="240"/>
     </wire>
     <wire>
-      <p1 x="-20" y="240"/>
+      <p1 x="0" y="240"/>
       <p2 x="320" y="240"/>
     </wire>
     <wire>
-      <p1 x="-20" y="160"/>
+      <p1 x="-80" y="160"/>
       <p2 x="320" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="-80" y="320"/>
+      <p2 x="-20" y="320"/>
     </wire>
     <wire>
       <p1 x="240" y="-20"/>
@@ -193,14 +206,10 @@ D as the least-significant bit.</string>
     </wire>
     <wire>
       <p1 x="80" y="100"/>
-      <p2 x="100" y="100"/>
-    </wire>
-    <wire>
-      <p1 x="140" y="100"/>
       <p2 x="300" y="100"/>
     </wire>
     <wire>
-      <p1 x="-20" y="180"/>
+      <p1 x="0" y="180"/>
       <p2 x="320" y="180"/>
     </wire>
     <wire>
@@ -220,16 +229,16 @@ D as the least-significant bit.</string>
       <p2 x="320" y="200"/>
     </wire>
     <wire>
-      <p1 x="-20" y="280"/>
+      <p1 x="0" y="280"/>
       <p2 x="320" y="280"/>
-    </wire>
-    <wire>
-      <p1 x="-20" y="220"/>
-      <p2 x="320" y="220"/>
     </wire>
     <wire>
       <p1 x="-20" y="300"/>
       <p2 x="320" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="220"/>
+      <p2 x="320" y="220"/>
     </wire>
     <wire>
       <p1 x="80" y="40"/>
@@ -240,32 +249,32 @@ D as the least-significant bit.</string>
       <p2 x="320" y="120"/>
     </wire>
     <wire>
-      <p1 x="-20" y="160"/>
-      <p2 x="-20" y="180"/>
+      <p1 x="0" y="180"/>
+      <p2 x="0" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="220"/>
+      <p2 x="0" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="240"/>
+      <p2 x="0" y="280"/>
     </wire>
     <wire>
       <p1 x="-20" y="200"/>
-      <p2 x="-20" y="220"/>
-    </wire>
-    <wire>
-      <p1 x="-20" y="220"/>
-      <p2 x="-20" y="240"/>
-    </wire>
-    <wire>
-      <p1 x="-20" y="280"/>
-      <p2 x="-20" y="300"/>
-    </wire>
-    <wire>
-      <p1 x="-20" y="260"/>
-      <p2 x="-20" y="280"/>
-    </wire>
-    <wire>
-      <p1 x="-20" y="240"/>
       <p2 x="-20" y="260"/>
     </wire>
     <wire>
-      <p1 x="-20" y="300"/>
+      <p1 x="-20" y="260"/>
+      <p2 x="-20" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="-20" y="320"/>
       <p2 x="-20" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="-20" y="300"/>
+      <p2 x="-20" y="320"/>
     </wire>
     <wire>
       <p1 x="340" y="140"/>
@@ -286,6 +295,10 @@ D as the least-significant bit.</string>
     <wire>
       <p1 x="300" y="100"/>
       <p2 x="300" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="-80" y="160"/>
+      <p2 x="-80" y="320"/>
     </wire>
   </wires>
   <measurementOrdering/>
